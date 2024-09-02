@@ -11,6 +11,8 @@ import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
       style={{ maxWidth: "1440px", margin: "auto" }}
       className="px-5 sm:px[5vw] md:px-[7w] lg:px-9vw]"
     >
+      <ToastContainer />
       <Navbar />
       <SearchBar />
       <Routes>
